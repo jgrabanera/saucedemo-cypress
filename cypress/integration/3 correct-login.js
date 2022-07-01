@@ -7,18 +7,19 @@ describe("Test Login Form via saucedemo", () => {
     //visit saucedemo website
     cy.visit("https://www.saucedemo.com/")
 
-    cy.get("[data-test=username]").type("standard_user")
-    .should('have.value', 'standard_user') //validate username input value
-    .should("have.attr", "name", "user-name") //validate username attribute
+    cy.get("[data-test=username]")
+      .type("standard_user")
+      .should("have.value", "standard_user") //validate username input value
+      .should("have.attr", "name", "user-name") //validate username attribute
 
-    cy.get("[data-test=password]").type("secret_sauce")
-    .should('have.value', 'secret_sauce') //validate password input value
-    .should("have.attr", "name", "password") //validate password input
+    cy.get("[data-test=password]")
+      .type("secret_sauce")
+      .should("have.value", "secret_sauce") //validate password input value
+      .should("have.attr", "name", "password") //validate password input
 
     cy.get("[data-test=login-button]").click()
 
     cy.url().should("include", "/inventory") //validate page url
     cy.log("Successfully Login")
   })
-
 })
