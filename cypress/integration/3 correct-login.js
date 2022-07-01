@@ -12,7 +12,8 @@ describe("Test Login Form via saucedemo", () => {
     .should("have.attr", "name", "user-name") //validate username attribute
 
     cy.get("[data-test=password]").type("secret_sauce")
-    cy.get("[data-test=password]").should("have.attr", "name", "password") //validate password input
+    .should('have.value', 'secret_sauce') //validate password input value
+    .should("have.attr", "name", "password") //validate password input
 
     cy.get("[data-test=login-button]").click()
 
