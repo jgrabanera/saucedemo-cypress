@@ -1,0 +1,27 @@
+Project Name:,SauceDemo Project,,,,,,,,
+Module Name:,Login,,,,,,,,
+Reference Document:,N/A,,,,,,,,
+Created By:,Jomar Rabanera,,,,,,,,
+Date of Creation:,7/7/2022,,,,,,,,
+Date of Review:,N/A,,,,,,,,
+Test Website Link:,https://www.saucedemo.com/,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+TEST SCENARIO ID,TEST SCENARIO,TEST CASE ID,TEST CASE,PRE-CONDITION,TEST STEPS,TEST DATA,EXPECTED RESULT,POST CONDITION,STATUS (PASS/FAIL)
+TS_LOGIN_001,Verify the user login functionality,TC_LOGIN_001,Enter valid username and password,Need valid username and password to do login,"1. Enter username
+2. Enter password
+3 Click ""Login"" Button","Username: standard_user
+Password: secret_sauce",Succesful Login,List of Product is shown,PASS
+,,TC_LOGIN_002,Enter valid username and invalid password,Need valid username and password to do login,"1. Enter username
+2. Enter password
+3 Click ""Login"" Button","Username: standard_user
+Password: password","A message ""Epic sadface: Username and password do not match any user in this service""",,FAIL
+,,TC_LOGIN_003,Enter invalid username and valid password,Need valid username and password to do login,"1. Enter username
+2. Enter password
+3 Click ""Login"" Button","Username: standar_user
+Password: secret_sauce","A message ""Epic sadface: Username and password do not match any user in this service""",,FAIL
+,,TC_LOGIN_004,Enter invalid username and invalid password,Need valid username and password to do login,"1. Enter username
+2. Enter password
+3 Click ""Login"" Button","Username: standard_user1
+Password: secret_sauce1","A message ""Epic sadface: Username and password do not match any user in this service""",,FAIL

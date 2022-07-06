@@ -1,0 +1,16 @@
+Project Name:,SauceDemo Project,,,,,,,,
+Module Name:,Login,,,,,,,,
+Reference Document:,N/A,,,,,,,,
+Created By:,Jomar Rabanera,,,,,,,,
+Date of Creation:,7/7/2022,,,,,,,,
+Date of Review:,N/A,,,,,,,,
+Test Website Link:,https://www.saucedemo.com/,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+TEST SCENARIO ID,TEST SCENARIO,TEST CASE ID,TEST CASE,PRE-CONDITION,TEST STEPS,TEST DATA,EXPECTED RESULT,POST CONDITION,STATUS (PASS/FAIL)
+TS_ADDCART_001,Add items to cart ,TC_ADDCART_001,Click item and add them to cart then remove ,No items in cart,"1. Click any item
+2. Click ''ADD TO CART"" Button
+3 Click ""REMOVE""
+4 Click ""BACK TO PRODUCTS""
+5 Add 2 items to CART",-,2 items in cart,New item on cart,PASS
